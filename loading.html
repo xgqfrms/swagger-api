@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loading</title>
+    <!-- https://editor.swagger.io/-->
+    <!-- https://codepen.io/xgqfrms/pen/mmZbpz -->
+    <!-- https://codepen.io/xgqfrms/pen/dWBbme -->
+    <style>
+        @charset "UTF-8";
+        .swagger-ui .loading-container .loading {
+            position: relative;
+        }
+        .swagger-ui .loading-container {
+            padding: 40px 0 60px;
+        }
+        .swagger-ui .loading-container .loading:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: block;
+            width: 60px;
+            height: 60px;
+            margin: -30px;
+            content: "";
+            -webkit-animation: rotation 1s infinite linear,opacity .5s;
+            animation: rotation 1s infinite linear,opacity .5s; 
+            opacity: 1;
+            border: 2px solid rgba(85,85,85,.1);
+            border-top-color: rgba(0,0,0,.6);
+            border-radius: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        .swagger-ui .loading-container .loading:after {
+            font-size: 10px;
+            font-weight: 700;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            content: "Loading";
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            /*text-transform: uppercase;*/
+            font-family: Titillium Web,sans-serif;
+            color: #3b4151;
+        }
+        /*rotation*/
+        @keyframes rotation{
+            to{
+                -webkit-transform:rotate(1turn);
+                transform:rotate(1turn)
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="swagger-ui">
+        <div class="loading-container">
+            <div class="loading"></div>
+        </div>
+    </section>
+    <!-- js -->
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "swagger-node-api",
+  "version": "1.1.1",
+  "description": "swagger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgqfrms-GitHub/swagger-node-api.git"
+  },
+  "keywords": [
+    "swagger-node-api"
+  ],
+  "author": "xgqfrms,webgeeker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgqfrms-GitHub/swagger-node-api/issues"
+  },
+  "homepage": "https://github.com/xgqfrms-GitHub/swagger-node-api#readme"
+}
