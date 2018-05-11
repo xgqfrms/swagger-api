@@ -11,7 +11,7 @@ https://www.udemy.com/nodejs-codeless-api-creation-up-and-running-with-swagger/l
 https://www.npmjs.com/package/swagger
 
 
-Swagger是OpenAPI规范（OAS）的API开发人员工具世界上最大的框架，可在整个API生命周期内进行开发，从设计和文档到测试和部署。
+> Swagger 是 OpenAPI规范（OAS）的API开发人员工具世界上最大的框架，可在整个API生命周期内进行开发，从设计和文档到测试和部署。
 
 
 http://swagger.io/
@@ -71,11 +71,10 @@ http://127.0.0.1:13746/#!/
 
 http://127.0.0.1:10010/hello?name=xgqfrms
 
-```
-
-
 https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#operation-object-example
 
+
+```json
 
 "parameters": [
     {
@@ -101,6 +100,9 @@ https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#operati
     }
   ],
 
+```
+
+```sh
 
 parameters:
 - name: petId
@@ -119,12 +121,12 @@ parameters:
   required: false
   type: string
 
+```
 
 
 
 
-
-
+```css
 
 .swagger-ui .loading-container .loading:before {
     position: absolute;
@@ -168,9 +170,15 @@ parameters:
 .swagger-ui .loading-container {
     padding: 40px 0 60px;
 }
+```
 
+```html
 
 <div class="loading-container"><div class="loading"></div></div>
+
+```
+
+```css
 
 .swagger-ui .loading-container .loading:before {
     position: absolute;
@@ -206,10 +214,7 @@ parameters:
 }
 
 
-
-
-
-
+```
 
 
 
@@ -254,6 +259,7 @@ function MyComponentClass (props) {
     var title = props.title;
   return <h1>{title}</h1>;
 }
+
 ```
 
 
